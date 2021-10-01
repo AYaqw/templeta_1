@@ -1,0 +1,711 @@
+/*rulse*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", " Arial", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+    --primary_color: #ef3c0b;
+    --secondary_color: #6c757d;
+}
+
+.containers {
+    padding: 0 10%;
+}
+
+
+/********************Start-> section_home->1*******************/
+
+
+/*1.1->part_home*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(img/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary_color);
+    background-attachment: scroll;
+}
+
+
+/*1.2->part_navbar*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5% 6%;
+}
+
+
+/*1.2.1->brand*/
+
+.brand {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.brand a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/*1.2.2->links*/
+
+.list {
+    display: flex;
+}
+
+
+/*1.2.3->list_item*/
+
+.list_item {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.list_item a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+}
+
+
+/*1.3->menu*/
+
+.menu {
+    display: none;
+    width: 40px;
+    height: 50px;
+    background-color: red;
+}
+
+.menu span {
+    display: none;
+    margin-bottom: 7px;
+    width: 40px;
+    height: 4px;
+    background-color: white;
+}
+
+
+/*1.4->inf*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+
+/*1.4.1->info_header*/
+
+.info_header {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-top: -7%;
+    padding: 0 10%;
+}
+
+hr {
+    background-color: var(--primary_color);
+    opacity: 1;
+    border: none;
+    border-radius: 1px;
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin: 2% auto;
+}
+
+
+/*1.4.2->info_para*/
+
+.info_para {
+    text-align: center;
+    width: 71%;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+    margin: 30px;
+}
+
+
+/*1.4.3->info_btn*/
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 39px;
+    background-color: var(--primary_color);
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.info_btn button:hover {
+    background-color: #f4623a;
+    ;
+}
+
+
+/*media*/
+
+@media (min-width: 0px)and (max-width: 992px) {
+    /*home*/
+    .home {
+        height: 70vh;
+    }
+    .containers {
+        padding: 0px !important;
+    }
+    /*header*/
+    .info_header {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 75px;
+    }
+    /*btn*/
+    button {
+        margin-bottom: 50px;
+    }
+    /*nav*/
+    .navbar {
+        display: block;
+        padding: 5% 6%;
+        margin-bottom: 20px;
+    }
+    /*list_links*/
+    .links {
+        visibility: visible;
+        padding: 0;
+    }
+    .links .list {
+        border-radius: 7px;
+        z-index: -999;
+        margin-top: 20px;
+        padding: 12px;
+        display: block;
+        background-color: #fff;
+        box-shadow: 0px 2px 1px rgb(169, 162, 162, .75);
+    }
+    .list_item a {
+        color: #000 !important;
+    }
+    /*menu*/
+    .menu span {
+        display: block;
+    }
+    .menu {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 57px;
+        background-color: transparent;
+    }
+}
+
+.appear {
+    display: block;
+}
+
+
+/********************End-> section_home->1*******************/
+
+
+/********************Start-> section_about->2****************/
+
+
+/*2.1->part_about*/
+
+.about {
+    max-height: 80vh;
+    background-color: var(--primary_color);
+    padding-top: 100px;
+}
+
+
+/*2.2-> about_info*/
+
+.about_info {
+    text-align: center;
+}
+
+
+/*2.2.1->about_header*/
+
+.about_header {
+    color: #fff;
+    font-size: 34px;
+}
+
+.about_header hr {
+    background-color: #fff;
+}
+
+
+/*2.2.2->info_para*/
+
+.about_para {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*2.2.3->info_btn*/
+
+.about_btn button {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    margin-top: 3%;
+    margin-bottom: 50px;
+}
+
+.about_btn button:hover,
+.download_btn button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+
+/********************End-> section_about->2****************/
+
+
+/********************Start-> section_services->3***********/
+
+
+/*3.1->part_service*/
+
+.service {
+    height: fit-content;
+    padding: 100px 0;
+}
+
+
+/*3.2->service_info*/
+
+
+/*3.2.1->service_header*/
+
+.service_header {
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+
+/*3.2.2-> service_boxs*/
+
+.service_boxs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+
+/*3.2.2.1->box*/
+
+.box {
+    text-align: center;
+}
+
+.box p {
+    color: var(--secondary_color);
+    margin: 10px;
+}
+
+
+/*----media*/
+
+@media (min-width: 768px)and (max-width: 992px) {
+    .service_boxs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20%;
+    }
+    .service {
+        margin: 0 0 100px 0;
+    }
+}
+
+@media (min-width: 0px)and (max-width: 768px) {
+    /*service*/
+    .service_boxs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20%;
+    }
+    .service {
+        margin: 0 0 100px 0;
+    }
+}
+
+
+/****************End-> section_services->3***********/
+
+
+/*****************Start-> section_portfolio->4*************/
+
+
+/*4.1->part_portfolio*/
+
+.portfolio {
+    min-height: fit-content;
+}
+
+
+/*4.2->.imgs*/
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*4.2.1->word in img*/
+
+.projCat {
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+
+.imgs div {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.imgs .prog:hover .projCat {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*4.2.2->img1*/
+
+.imgs .img1 {
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img1:hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*4.2.3->img2*/
+
+.imgs .img2 {
+    background: url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img2:hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*4.2.3->img3*/
+
+.imgs .img3 {
+    background: url(img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img3 :hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*4.2.4->img4*/
+
+.imgs .img4 {
+    background: url(img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img4:hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*4.2.5->img5*/
+
+.imgs .img5 {
+    background: url(img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img5:hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*4.2.6->img6*/
+
+.imgs .img6 {
+    background: url(img/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: .9s;
+}
+
+.imgs .img6:hover {
+    background: linear-gradient(to bottom, rgb(255, 109, 4, 0.8) 0%, rgb(255, 106, 0, .8) 100%), url(img/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+
+/*->media*/
+
+@media (min-width: 768px)and (max-width: 992px) {
+    /*imgs*/
+    .imgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 0px)and (max-width: 768px) {
+    /*imgs*/
+    .imgs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/****************End-> section_portfolio->4***********/
+
+
+/*****************Start-> section_download->5*************/
+
+
+/*5.1->part_download*/
+
+.download {
+    height: fit-content;
+    text-align: center;
+    background-color: #343a40;
+    padding: 11%;
+}
+
+
+/*5.2->download_info*/
+
+
+/*5.2.1->download_header*/
+
+.download_header {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+
+/*5.2.2->download_btn*/
+
+.download_btn button {
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+    margin: 3%;
+}
+
+
+/****************End-> section_download->5***********/
+
+
+/****************Start->section_contact->6**********/
+
+
+/*6.1->part_contact*/
+
+.contact {
+    padding: 10%;
+}
+
+
+/*6.2->contact_info*/
+
+
+/*6.2.1->header*/
+
+.contact_header {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+/*6.2.2->contact_para*/
+
+.contact_para {
+    text-align: center;
+    padding: 5px;
+    color: var(--secondary_color);
+}
+
+
+/*6.2.3->link*/
+
+.linkss {
+    display: flex;
+    justify-content: space-between;
+    padding: 12%;
+}
+
+
+/*6.2.3.1->link */
+
+.link {
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--primary_color);
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+
+/*media*/
+
+@media (min-width: 0px)and (max-width: 768px) {
+    .contact .linkss {
+        text-align: center;
+        display: block;
+    }
+    .contact .linkss .link {
+        margin: 9%;
+    }
+}
+
+
+/****************End-> section_contact->5***********/
+
+
+/****************Start->section_footer->6**********/
+
+
+/*6.1->footer_part*/
+
+.footer {
+    text-align: center;
+    color: var(--secondary_color);
+    margin-bottom: 10%;
+}
+
+
+/*scroll_top*/
+
+.scroll_top {
+    position: relative;
+}
+
+.arrow {
+    position: fixed;
+    background-color: var(--primary_color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: x-large;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+/***===========Style-> in js=====================*******/
+
+
+/*nav in js*/
+
+.navstyle {
+    height: 100px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 1px rgb(169, 162, 162, .75);
+}
+
+.black {
+    color: black !important;
+}
+
+.blackback {
+    background-color: black !important;
+}
+
+.orngword {
+    border-bottom: 3px solid var(--primary_color);
+}
+
+.hide {
+    visibility: hidden;
+}
