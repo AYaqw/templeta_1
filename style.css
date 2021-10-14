@@ -178,13 +178,19 @@ button {
     }
     /*header*/
     .info_header {
-        font-size: 30px;
+        font-size: 48px;
         font-weight: 600;
         margin-top: 75px;
     }
+   hr {width: 154px;
+    height: 4px;}
+    .info_para {
+        font-size: xx-large;}
     /*btn*/
     button {
         margin-bottom: 50px;
+        font-size: 29px;
+        font-weight: 700;
     }
     /*nav*/
     .navbar {
@@ -192,10 +198,13 @@ button {
         padding: 5% 6%;
         margin-bottom: 20px;
     }
+    .brand {
+        font-size: 50px;}
     /*list_links*/
     .links {
         visibility: visible;
         padding: 0;
+        font-size: 35px;
     }
     .links .list {
         border-radius: 7px;
@@ -212,12 +221,16 @@ button {
     /*menu*/
     .menu span {
         display: block;
+        margin-bottom: 11px;
+        width: 65px;
+        height: 10px;
+    
     }
     .menu {
         cursor: pointer;
         display: block;
         position: fixed;
-        top: 30px;
+        top: 57px;
         right: 57px;
         background-color: transparent;
     }
@@ -284,6 +297,15 @@ button {
     background-color: rgb(233, 233, 233);
 }
 
+@media (min-width: 0px)and (max-width: 992px) {
+.about_header {font-size: 48px;}
+    .about_para {
+    color: rgb(255, 255, 255 , 61%);
+    font-size: xx-large;
+    margin: 0 62px;
+}
+    
+}
 
 /********************End-> section_about->2****************/
 
@@ -334,6 +356,7 @@ button {
 
 /*----media*/
 
+
 @media (min-width: 768px)and (max-width: 992px) {
     .service_boxs {
         grid-template-columns: repeat(2, 1fr);
@@ -342,6 +365,20 @@ button {
     .service {
         margin: 0 0 100px 0;
     }
+    /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+    .service_header {
+        font-weight: 600;
+    font-size: 48px;}
+    
+   .box h2 {font-size: 20px;
+    font-weight: 500;}
+    
+    .box p {
+    color: #999fa5;
+    font-size: 10px;
+    font-weight: 400;
+}
+    
 }
 
 @media (min-width: 0px)and (max-width: 768px) {
@@ -353,6 +390,18 @@ button {
     .service {
         margin: 0 0 100px 0;
     }
+     .service_header {
+         font-weight: 600;
+    font-size: 48px;}
+    
+     .box h2 {font-size: 20px;
+    font-weight: 500;}
+    
+      .box p {
+    color: #999fa5;
+    font-size: 10px;
+    font-weight: 400;
+}
 }
 
 
@@ -634,7 +683,22 @@ button {
 
 
 /*media*/
-
+@media (min-width: 0px)and (max-width: 992px) {
+    .contact_para {font-weight: 400;
+    font-size: 12px;}
+    
+    .contact_header {
+    font-size: 48px;
+    font-weight: 600;}
+    
+    .linkss {
+    padding: 6%;
+    margin: 25px;
+    font-size: 29px;
+    font-weight: 600;}
+    .footer {
+        font-size: x-small;}
+}
 @media (min-width: 0px)and (max-width: 768px) {
     .contact .linkss {
         text-align: center;
@@ -643,6 +707,7 @@ button {
     .contact .linkss .link {
         margin: 9%;
     }
+   
 }
 
 
